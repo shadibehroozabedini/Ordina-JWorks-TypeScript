@@ -1,4 +1,5 @@
 var jsonParser = new JSONParser();
+var library = new Library(null, null);
 jsonParser.getJSON("items.json", function (data) {
     var library = Library.fromJSON(data);
     var itemContainer = document.getElementById("items");

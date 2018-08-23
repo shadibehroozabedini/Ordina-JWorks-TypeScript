@@ -15,9 +15,11 @@ var Library = /** @class */ (function () {
     Library.prototype.addMovie = function () {
         var extraMovie = new Movie("extramovie", "drama", "sfsfsfsdfs", 24, "some name");
         this.items.push(extraMovie);
+        //test
+        console.log(this.items);
         document.getElementById("items").innerHTML = "";
-        var itemContainer = document.getElementById("items");
-        this.items.forEach(function (item) { return item.render(itemContainer); });
+        //let itemContainer: HTMLElement = document.getElementById("items");
+        //this.items.forEach(item => item.render(itemContainer));
     };
     Library.prototype.addBook = function () {
         var extraBook = new Book("bookextra", new Author("me"), "nobel", "extra description");

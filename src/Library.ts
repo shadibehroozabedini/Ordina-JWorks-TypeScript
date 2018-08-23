@@ -21,10 +21,12 @@ class Library {
     addMovie() {
         let extraMovie: Movie = new Movie("extramovie", "drama", "sfsfsfsdfs", 24, "some name");
         this.items.push(extraMovie);
+        //test
+        console.log(this.items);
         document.getElementById("items").innerHTML = "";
 
-        let itemContainer: HTMLElement = document.getElementById("items");
-        this.items.forEach(item => item.render(itemContainer));
+        //let itemContainer: HTMLElement = document.getElementById("items");
+        //this.items.forEach(item => item.render(itemContainer));
     }
 
 
